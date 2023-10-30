@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Vanilla JS Basics</h1>
+
+    <script>
+        /*
+        Activity 3
+        Write a JavaScript program that accepts three numbers and prints "All numbers are equal" 
+        if all three numbers are equal, "All numbers are different" if all three numbers are different 
+        and "Neither all are equal or different" otherwise.
+
+    Test Data:
+
+    Input first number: 2
+    Input second number: 3
+    Input third number: 4
+
+    Expected Output :
+
+    All numbers are different.
+
+    */
+
+        const a = 2;
+        const b = 3;
+        const c = 4;
+
+
+        if (a == b && b == c) {
+
+            console.log("All numbers are equal");
+
+        } else if (a != b && b != c && a != c) {
+            console.log("All numbers are different");
+        } else {
+            console.log("Neither all are equal or different")
+        }
+
+    </script>
+</body>
+
+</html>
