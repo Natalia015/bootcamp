@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Vanilla JS Basics</h1>
+
+    <script>
+        /*
+        Activity 5
+        Write a JavaScript program that will iterate from 0 to 15. 
+        For each iteration, it will check if the current number is odd or even, 
+        and display a message to the screen.
+
+        Expected Output:
+
+        "0 is even"
+        "1 is odd"
+        "2 is even"
+
+    */
+
+        const n = 15;
+        let i = 0
+
+
+        // looping from i = 1 to 15
+        for (let i = 1; i <= n; i++) {
+            //checking if even or odd
+            if (i % 2 == 0) {
+                console.log(i + " is even");
+            } else {
+                console.log(i + " is odd");
+            }
+        }
+        console.log("loop ended");
+
+    </script>
+</body>
+
+</html>
