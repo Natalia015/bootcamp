@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Vanilla JS Basics</h1>
+
+    <script>
+        /*
+        Activity 8
+
+        Write a JavaScript program to calculate the average value of an array elements.
+
+        Test Data:
+
+        Sample Array:
+
+        [20, 30, 25, 35, -16, 60, -100]
+
+        Expected Output:
+
+        Average value of the array elements is : 7.7.
+
+        */
+
+        //define constans and variables
+        const numbers = [20, 30, 25, 35, -16, 60, -100];
+        let nLen = numbers.length;
+        let sum = 0;
+        let avg = 0;
+        //check condition and update i
+        for (let i = 0; i < nLen; i++) {
+            //update sum
+            sum += numbers[i];
+        }
+        //count average
+        avg = sum / nLen;
+        //round the result
+        var rounded = Math.round(avg * 10) / 10
+        //show the rounded average
+        console.log("Average value of the array elements is : " + rounded);
+
+    </script>
+</body>
+
+</html>
