@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Vanilla JS Basics</h1>
+
+    <script>
+        /*
+        Activity 10
+
+        Write 2 JavaScript functions to: 
+
+        show the array content. 
+        find the max value in the array.
+        Sample Array : [10, 2, 3, 4, 7]
+
+        Expected Output :
+
+        The content of the array is: [10, 2, 3, 4, 7]
+
+        The max value in the array is: 10
+        */
+
+        //the array
+        const numbers = [10, 2, 3, 4, 7];
+
+
+        showArray = () => {
+            console.log("The content of the array is: " + numbers);
+        }
+
+
+        findMaxValue = () => {
+            const maximum = Math.max(...numbers);
+            console.log("The max value in the array is: " +  maximum);
+        }
+      
+        showArray();
+        findMaxValue();
+
+    </script>
+</body>
+
+</html>
