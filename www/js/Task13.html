@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Activity 1 - Vanilla JS DOM</title>
+        <script>
+            function js_style() {
+                // Get the paragraph by id
+                let paragraph = document.getElementById('text');
+                
+                // Change the styling
+                paragraph.style.backgroundColor = "black";
+                paragraph.style.color = 'white'; 
+                paragraph.style.fontSize = '32px';
+                paragraph.style.fontWeight = 'bold'; 
+                paragraph.style.textAlign = "center";
+            }
+        </script>
+    </head> 
+    <body>
+        <p id="text">Vanilla JS DOM</p> 
+        <div>
+            <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+    </body>
+</html>
