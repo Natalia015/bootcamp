@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere Volume</title>
+</head>
+
+<body>
+
+    <h4>Input radius value and get the volume of the sphere.</h4>
+
+    <label for="radiusInput">Please enter radius of the sphere:</label>
+    <input id="radiusInput" placeholder="Enter radius">
+    <button onclick="calculateVolume()">Calculate volume</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateVolume() {
+            // Get the radius value from the input field:
+            const radiusInput = document.getElementById("radiusInput");
+            const radius = parseFloat(radiusInput.value);
+
+            // Check if the input is a positive number:
+            if (isNaN(radius) || radius <= 0) {
+                alert("Please enter a positive number for radius");
+                return;
+            }
+
+            // Calculate the volume:
+            const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+
+            // Result:
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `Volume: ${volume.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+
+</html>
